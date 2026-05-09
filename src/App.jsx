@@ -75,7 +75,7 @@ export default function App() {
                         </p>
                         <div className="hero-actions">
                             <a className="primary" href="#visiting-card">
-                                Get Visiting Card
+                                for more information contact
                             </a>
                             <a className="secondary" href="#amenities">
                                 Explore Amenities
