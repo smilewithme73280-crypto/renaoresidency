@@ -98,7 +98,7 @@ export default function App() {
                     <div className="section-title">
                         <span className="eyebrow">Rooms & Pricing</span>
                         <h2>Choose a room that fits your vibe</h2>
-                        <p className="muted">Rent includes maintenance. Electricity billed separately.</p>
+                        <p className="muted">Rent excludes maintenance. Electricity billed separately.</p>
                     </div>
                     {loading && <p className="muted">Loading room details…</p>}
                     {error && <p className="muted">{error}</p>}
@@ -125,7 +125,7 @@ export default function App() {
                             <p>Rate: ₹{electricityRatePerUnit.toFixed(2)} per unit</p>
                         </div>
                         <div>
-                            <strong>Maintenance included in rent</strong>
+                            <strong>Maintenance not included in rent</strong>
                             <p>{billingText}</p>
                         </div>
                     </div>
