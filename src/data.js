@@ -5,7 +5,7 @@ const pgData = {
     buildings: ["Qube", "Clubhouse"],
     mapLink:
         "https://www.google.com/maps/search/?api=1&query=Habitech%20Crystal%20Mall%2C%20Knowledge%20Park%203%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201306",
-    eligibility: ["Indians", "Foreigners - All are welcomed", "Boys", "Girls"],
+    eligibility: ["Indians & Foreigners (Boys & Girls) - All are welcomed"],
     electricityRatePerUnit: 8.68,
     billingNote: "Electricity billed on prepaid meter. Pay via app.",
     rooms: [
