@@ -15,3 +15,11 @@ test("visiting card includes contact", () => {
     assert.ok(pgData.visitingCard.contactName);
     assert.ok(pgData.visitingCard.email);
 });
+
+test("eligibility includes foreigners", () => {
+    assert.ok(
+        pgData.eligibility.some((x) => /foreign/i.test(String(x))),
+        "Expected eligibility to include foreigners"
+    );
+});
+

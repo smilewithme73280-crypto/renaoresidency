@@ -1,0 +1,5 @@
+- [ ] Confirm desired “separate contact information column” layout
+- [ ] Add a new `contact` object to `src/data.js` with address/phone/email/etc (kept in sync with existing visitingCard + locationNote/mapLink)
+- [ ] Update `src/App.jsx` to render a new separate “Contact” column/section in the Visiting Card area
+- [ ] Update `tests/data.test.js` to validate new `contact` fields
+- [ ] Run `npm test` and `npm run dev` to verify UI rendering and tests
