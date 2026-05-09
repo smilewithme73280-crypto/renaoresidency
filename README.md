@@ -12,6 +12,7 @@ A modern PG (Paying Guest) website with a frontend landing page and a backend AP
 ## Project Structure
 
 - `server.js` – Express server serving API + static frontend
+- `src/app.js` – Shared Express app (used by Vercel serverless function)
 - `src/data.js` – PG data used by the API
 - `public/` – Frontend (HTML/CSS/JS + images)
 - `tests/` – Node test suite
@@ -38,3 +39,11 @@ Then open `http://localhost:3000` in a browser.
 ```bash
 npm test
 ```
+
+## Vercel deployment
+
+This project is Vercel-ready using the serverless function at `api/index.js`.
+
+1. Push the repo to GitHub.
+2. In Vercel, import the repo and deploy.
+3. The frontend is served from `public/`, and API endpoints are available at `/api/pg`, `/api/visiting-card`, and `/health`.

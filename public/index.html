@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern PG Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav">
+            <div class="logo">Modern PG Stay</div>
+            <a class="nav-cta" href="#pricing">View Rooms</a>
+        </nav>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <p class="badge">Fully Furnished • Dedicated Kitchen</p>
+                <h1>Modern, safe, and spacious PG living</h1>
+                <p class="subtitle">
+                    Premium 1RK rooms with prepaid electricity billing, modern interiors, and a
+                    welcoming community for everyone.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary" href="#visiting-card">Get Visiting Card</a>
+                    <a class="secondary" href="#amenities">Explore Amenities</a>
+                </div>
+                <div class="hero-highlights" id="eligibility"></div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/hero.svg" alt="Modern PG building" />
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="pricing">
+            <div class="section-title">
+                <span class="eyebrow">Rooms & Pricing</span>
+                <h2>Choose a room that fits your vibe</h2>
+                <p class="muted">Rent includes maintenance. Electricity billed separately.</p>
+            </div>
+            <div class="cards" id="room-cards"></div>
+            <div class="billing-card" id="billing"></div>
+        </section>
+
+        <section class="section alt" id="amenities">
+            <div class="section-title">
+                <span class="eyebrow">Amenities</span>
+                <h2>Fully furnished with every essential</h2>
+            </div>
+            <div class="amenities-grid" id="amenities-list"></div>
+        </section>
+
+        <section class="section" id="visiting-card">
+            <div class="section-title">
+                <span class="eyebrow">Visiting Card</span>
+                <h2>Everything you need, at a glance</h2>
+            </div>
+            <div class="visiting-wrapper">
+                <div class="visiting-card" id="visiting"></div>
+                <div class="visiting-details">
+                    <h3>Who can stay?</h3>
+                    <ul id="eligibility-list"></ul>
+                    <p class="muted">
+                        All rooms are fully furnished with fridge, oven, kettle, almirah, mattress,
+                        TV, table, and chair. Every room includes a balcony and a dedicated kitchen area.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="gallery">
+            <div class="section-title">
+                <span class="eyebrow">Spaces</span>
+                <h2>Designed for comfort</h2>
+            </div>
+            <div class="gallery">
+                <img src="/images/room-small.svg" alt="Small 1RK room" />
+                <img src="/images/room-big.svg" alt="Big 1RK room" />
+                <img src="/images/kitchen.svg" alt="Dedicated kitchen area" />
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h4>Modern PG Stay</h4>
+            <p class="muted">Comfort, safety, and community in one place.</p>
+        </div>
+        <div>
+            <p class="muted">Electricity billed via prepaid meter at ₹8.68 per unit.</p>
+        </div>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
