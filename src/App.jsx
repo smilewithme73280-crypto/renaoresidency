@@ -35,7 +35,17 @@ export default function App() {
         load();
     }, []);
 
-    const { eligibility, rooms, amenities, visitingCard, billingNote, electricityRatePerUnit } = data;
+    const {
+        eligibility,
+        rooms,
+        amenities,
+        visitingCard,
+        billingNote,
+        electricityRatePerUnit,
+        locationNote,
+        buildings,
+        mapLink
+    } = data;
 
     const billingText = useMemo(() => {
         if (rooms.length < 2) {
@@ -158,6 +168,19 @@ export default function App() {
                                     <li key={item}>{item}</li>
                                 ))}
                             </ul>
+                            <div className="location-block">
+                                <h4>Location</h4>
+                                <p className="muted">{locationNote}</p>
+                                {mapLink && (
+                                    <a className="location-link" href={mapLink} target="_blank" rel="noreferrer">
+                                        Open in Google Maps
+                                    </a>
+                                )}
+                            </div>
+                            <div className="location-block">
+                                <h4>Buildings</h4>
+                                <p className="muted">{buildings?.join(" • ")}</p>
+                            </div>
                             <p className="muted">
                                 All rooms are fully furnished with fridge, oven, kettle, almirah, mattress,
                                 TV, table, and chair. Every room includes a balcony and a dedicated kitchen

@@ -240,6 +240,20 @@ a {
     gap: 8px;
 }
 
+.location-block {
+    margin: 16px 0;
+    display: grid;
+    gap: 6px;
+}
+
+.location-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
