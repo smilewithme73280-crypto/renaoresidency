@@ -10,20 +10,28 @@ const pgData = {
     billingNote: "Electricity billed on prepaid meter. Pay via app.",
     rooms: [
         {
-            id: "small-1rk",
-            name: "Small Room 1RK",
+            id: "small-qube",
+            name: "Small Room Qube",
             rentPerMonth: 12000,
             maintenanceCharge: 2700,
             sizeNote: "Cozy setup ideal for solo living",
             image: "/images/room-small.svg"
         },
         {
-            id: "big-1rk",
-            name: "Big Room 1RK",
+            id: "big-qube",
+            name: "Big Room Qube",
             rentPerMonth: 15000,
             maintenanceCharge: 3600,
             sizeNote: "Extra space with a bright balcony",
             image: "/images/room-big.svg"
+        },
+        {
+            id: "small-clubhouse",
+            name: "Small Room Clubhouse",
+            rentPerMonth: 12000,
+            maintenanceCharge: 2700,
+            sizeNote: "Cozy setup ideal for solo living",
+            image: "/images/room-small.svg"
         }
     ],
     amenities: [

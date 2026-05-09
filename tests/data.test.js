@@ -3,7 +3,7 @@ import { test } from "node:test";
 import pgData from "../src/data.js";
 
 test("pg data includes two room types", () => {
-    assert.equal(pgData.rooms.length, 2);
+    assert.strictEqual(pgData.rooms.length, 3);
     assert.ok(pgData.rooms.every((room) => room.rentPerMonth > 0));
 });
 
