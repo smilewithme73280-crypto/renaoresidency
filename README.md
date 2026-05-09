@@ -19,14 +19,25 @@ A modern PG (Paying Guest) website with a frontend landing page and a backend AP
 
 ## Run locally
 
-Install dependencies and start the server.
+Install dependencies, then run the API server and React dev server.
 
 ```bash
 npm install
-npm start
 ```
 
-Then open `http://localhost:3000` in a browser.
+Terminal 1 (API server):
+
+```bash
+npm run dev:api
+```
+
+Terminal 2 (React dev server):
+
+```bash
+npm run dev
+```
+
+Then open `http://localhost:5173` in a browser.
 
 ## API endpoints
 
@@ -42,8 +53,8 @@ npm test
 
 ## Vercel deployment
 
-This project is Vercel-ready using the serverless function at `api/index.js`.
+This project deploys a React frontend (Vite build) alongside the serverless API at `api/index.js`.
 
 1. Push the repo to GitHub.
 2. In Vercel, import the repo and deploy.
-3. The frontend is served from `public/`, and API endpoints are available at `/api/pg`, `/api/visiting-card`, and `/health`.
+3. The frontend is built from Vite and the API endpoints are available at `/api/pg`, `/api/visiting-card`, and `/health`.
