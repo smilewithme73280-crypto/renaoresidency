@@ -28,6 +28,9 @@ const pgData = {
     ],
     amenities: [
         "Fully furnished rooms",
+        "Proper society with security",
+        "Security cameras on every floor",
+        "Blinkit store inside the society",
         "Fridge, oven, and kettle",
         "Almirah and mattress",
         "Balcony",
